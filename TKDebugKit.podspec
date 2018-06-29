@@ -17,13 +17,9 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     'ENABLE_BITCODE'           => 'NO'
   }
-
-  s.subspec "DebugKit" do |ss|
-    ss.source_files         = "DebugKit/*"
-    ss.resource             = "DebugKit/*"
-    ss.dependency 'FLEX'
-    ss.dependency 'CocoaLumberjack'
-    ss.dependency 'Masonry'
-    ss.dependency 'TKUpdateEnterpriseSDK'
-  end
+  s.vendored_frameworks  = 'DebugKit/DebugKit.framework'
+  s.dependency 'FLEX'
+  s.dependency 'CocoaLumberjack'
+  s.dependency 'Masonry'
+  s.dependency 'TKUpdateEnterpriseSDK'
 end
