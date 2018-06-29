@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "DebugKit"
+  s.name         = "TKDebugKit"
   s.version      = "0.0.2"
   s.summary      = "Taikang DebugKit"
   s.description  = "Taikang DebugKit"
