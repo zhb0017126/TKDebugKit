@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   }
   s.vendored_frameworks  = 'DebugKit/DebugKit.framework'
   s.dependency 'FLEX'
-  s.dependency 'CocoaLumberjack'
-  s.dependency 'Masonry'
+ # s.dependency 'CocoaLumberjack'
+  #s.dependency 'Masonry'
   s.dependency 'TKUpdateEnterpriseSDK'
 end
