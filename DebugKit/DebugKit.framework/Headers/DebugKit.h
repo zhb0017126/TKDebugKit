@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger,MenuItem) {
+    MenuItemAPM,
+    MenuItemFlex,
+    MenuItemDevice,
+    MenuItemTkAutoUpdate,
+    MenuItemPGYUpdate,
+    MenuItemChangeHost,
+    MenuItemCustom,
+};
+
 //! Project version number for DebugKit.
 FOUNDATION_EXPORT double DebugKitVersionNumber;
 
@@ -72,6 +82,30 @@ FOUNDATION_EXPORT const unsigned char DebugKitVersionString[];
     }
  ],
  */
+
+/**
+ *  @method  registerMenuItems:
+ *  @discribtion 添加菜单按钮
+ 
+ *  @param  menuItems   跳转的controller 菜单类型
+ [
+ { title:"APM",菜单按钮的标题
+ itemType:MenuItemAPM,菜单按钮的类型
+ 
+ MenuItemAPM,           APM
+ MenuItemFlex,          Flex
+ MenuItemDevice,        Device
+ MenuItemTkAutoUpdate,  TkAutoUpdate
+ MenuItemPGYUpdate,     PGYUpdate
+ MenuItemChangeHost,    ChangeHost
+ MenuItemCustom,        Custom
+ 
+ controller:"SystemStateViewController",点击按钮要跳转的controller名字
+ }
+ ]
+ 
+ */
++(void)addMenuItems:(NSArray *)menuItems ;
 @end
 
 
